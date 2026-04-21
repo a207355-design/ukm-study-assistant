@@ -1,0 +1,63 @@
+项目阶段性汇报：UKM Study Assistant (校园智能助手)
+
+📌 1. 项目概述 (Project Overview)
+“UKM Study Assistant” 是一款专为马来西亚国立大学（UKM）学生打造的专属智能校园伴侣。
+有别于普通的聊天机器人，本系统深度整合了个人课表数据与校园实时资讯，旨在通过大模型技术（LLM）和自动化脚本，帮助学生高效管理时间、获取校园动态，并提供个性化的学业问答服务。
+
+
+🛠 2. 技术架构与选型 (Tech Stack & Architecture)
+系统采用了高内聚、低耦合的模块化开发架构，确保了代码的可读性与后期扩展性：
+
+前端展示与交互： Streamlit (配合 streamlit-option-menu 实现精美的 UKM 主题定制化 UI)
+
+大语言模型： 接入 DeepSeek-Chat 大模型 (兼容 OpenAI 接口标准)
+
+数据持久化： 轻量级 JSON 本地文件存储方案（无需配置复杂数据库，即插即用）
+
+网络爬虫技术： Requests + XML 解析 (抓取校园实时 RSS 资讯)
+
+
+🚀 3. 核心功能模块 (Core Modules)
+目前系统已成功上线三大核心模块，均已实现预期的业务逻辑：
+
+模块一：🤖 校园智能大脑 (AI Chat Assistant)
+功能描述： 针对 UKM 校园生活定制的 AI 问答助手。
+
+技术亮点 (Context Injection)： 突破了传统 AI 只能“闲聊”的限制。我们在底层实现了微型的 RAG（检索增强生成） 技术。AI 会在后台自动读取用户的本地课表数据（my_schedule.json），将其转换为系统提示词（System Prompt）。
+
+应用场景： 用户可以直接问 AI：“我明天早上在哪栋楼上课？” AI 能够精准读取个人数据并给出准确回答，实现了真正的“私人助理”体验。
+
+模块二：📅 智能课表与自动化提醒 (My Schedule)
+功能描述： 提供课程的录入、周视图可视化展示以及删除管理功能。
+
+技术亮点 (Auto-Reminder Logic)： * 引入了 streamlit_autorefresh 后台心跳机制，网页每 60 秒自动静默刷新一次时间。
+
+课前 30 分钟预警： 系统会自动计算当前时间与上课时间的差值，一旦小于 30 分钟，触发双重提醒（Toast 弹窗 + 醒目的红色警告框），有效解决学生忘看课表的痛点。
+
+防误删机制： 关键的“清空课表”操作加入了 Popover 二次确认气泡，提升了产品的交互安全性。
+
+模块三：🎉 校园动态聚合 (Campus Events)
+功能描述： 实时聚合 UKM 相关的最新新闻、讲座与活动资讯。
+
+技术亮点 (Live Web Scraper & Filtering)：
+
+实时爬虫： scraper.py 模块通过向 Google News RSS 接口发送伪装请求，精准抓取“Universiti Kebangsaan Malaysia”的最新资讯。
+
+双重检索引擎： 支持用户通过“关键字搜索 (Search)”和“时间区间筛选 (Date Range)”快速定位感兴趣的活动。
+
+容错机制： 加入了缓存机制 (@st.cache_data) 减少网络请求压力；并且编写了断网 Fallback（备用数据）逻辑，确保即使在网络不佳时页面也不会崩溃。
+
+
+📂 4. 目录结构规范 (Directory Structure)
+为了方便后续团队协同开发，我们的项目目录已完成规范化重构：
+
+Plaintext
+📦 2223 project
+ ┣ 📂 assets/              # 静态资源 (如项目 Logo)
+ ┣ 📂 data/                # 用户数据存储 (如 my_schedule.json)
+ ┣ 📂 modules/             # 核心功能模块 (按职责分离)
+ ┃ ┣ 📜 ai_agent.py        # AI 对话与上下文逻辑
+ ┃ ┣ 📜 campus_events.py   # 活动展示与搜索过滤逻辑
+ ┃ ┣ 📜 schedule.py        # 课表增删改查与提醒逻辑
+ ┃ ┗ 📜 scraper.py         # 爬虫引擎
+ ┗ 📜 main.py              # 项目入口路由与 UI 骨架配置

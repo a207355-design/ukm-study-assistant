@@ -1,0 +1,94 @@
+{
+    "session_1776597015": {
+        "title": "请问UKM在哪里",
+        "created_at": "2026-04-19 19:10:21",
+        "messages": [
+            {
+                "role": "user",
+                "content": "请问UKM在哪里"
+            },
+            {
+                "role": "assistant",
+                "content": "UKM（Universiti Kebangsaan Malaysia，马来西亚国立大学）位于马来西亚雪兰莪州（Selangor）的万宜新镇（Bangi）。  \n\n**主要校区地址**：  \nUniversiti Kebangsaan Malaysia  \n43600 UKM Bangi, Selangor, Malaysia  \n\n**交通方式**：  \n- 从吉隆坡市中心出发，可乘坐火车（KTM Komuter）到“Bangi”站，再转乘出租车或校内巴士。  \n- 若自驾，可通过南北大道（PLUS Highway）从吉隆坡前往，约30-40分钟车程。  \n\n**其他校区**：  \nUKM 还有吉隆坡校区（UKM Kuala Lumpur）和雪邦医院校区（Hospital Canselor Tuanku Muhriz），但主校区在万宜（Bangi）。  \n\n需要更具体的路线或校园信息吗？ 😊"
+            },
+            {
+                "role": "user",
+                "content": "你可以用英文回答吗"
+            },
+            {
+                "role": "assistant",
+                "content": "Of course! Here's the information about UKM's location in English:\n\n**UKM (Universiti Kebangsaan Malaysia / The National University of Malaysia)** is located in **Bangi, Selangor, Malaysia**.\n\n**Main Campus Address**:  \nUniversiti Kebangsaan Malaysia  \n43600 UKM Bangi, Selangor, Malaysia  \n\n**How to Get There**:  \n- From Kuala Lumpur city center, you can take the **KTM Komuter** train to **Bangi Station**, then transfer to a taxi or the university shuttle bus.  \n- If driving, take the **North-South Expressway (PLUS Highway)** from Kuala Lumpur; it's about a 30–40 minute drive.  \n\n**Other Campuses**:  \nUKM also has campuses in **Kuala Lumpur** (for medical and health sciences) and the **Hospital Canselor Tuanku Muhriz** in Cheras, but the main academic campus is in Bangi.  \n\nLet me know if you need more specific directions or campus details! 😊"
+            }
+        ]
+    },
+    "session_1776598838": {
+        "title": "test1",
+        "created_at": "2026-04-19 19:40:44",
+        "messages": [
+            {
+                "role": "user",
+                "content": "test1"
+            },
+            {
+                "role": "assistant",
+                "content": "Hello! It looks like you've sent \"test1\" — if you're testing something or need help with your studies, schedule, or anything else at UKM, feel free to let me know! 😊\n\nFor example, you could ask:\n- \"What classes do I have on Monday?\"\n- \"Where is my SOFTWARE DESIGN lab?\"\n- \"Help me plan my study time this week.\"\n\nI’m here to assist!"
+            }
+        ]
+    },
+    "session_1776598852": {
+        "title": "test2",
+        "created_at": "2026-04-19 19:40:56",
+        "messages": [
+            {
+                "role": "user",
+                "content": "test2"
+            },
+            {
+                "role": "assistant",
+                "content": "Hello! It looks like you mentioned \"test2\" – is there anything specific you'd like help with? Whether it's about your classes, assignments, or anything else, feel free to ask! 😊"
+            }
+        ]
+    },
+    "session_1776598862": {
+        "title": "test3",
+        "created_at": "2026-04-19 19:41:07",
+        "messages": [
+            {
+                "role": "user",
+                "content": "test3"
+            },
+            {
+                "role": "assistant",
+                "content": "I'm here to help! If you're preparing for a test or exam, feel free to ask for study tips, time management strategies, or any specific subject-related assistance. Let me know what you need! 😊"
+            }
+        ]
+    },
+    "session_1776599075": {
+        "title": "如果打的字够多的话会不会撑开聊...",
+        "created_at": "2026-04-19 19:44:57",
+        "messages": [
+            {
+                "role": "user",
+                "content": "如果打的字够多的话会不会撑开聊天框呢，啊啊啊啊啊啊啊啊啊啊啊"
+            },
+            {
+                "role": "assistant",
+                "content": "哈哈，不用担心！聊天框会自动调整的，不会因为字多就“撑爆”的～  \n你可以尽情输入，我这边都能正常显示。  \n有什么需要帮忙的吗？比如课程安排、学习问题，或者校园生活相关的都可以问我哦！😊"
+            }
+        ]
+    },
+    "session_1776602448": {
+        "title": "1",
+        "created_at": "2026-04-19 20:44:56",
+        "messages": [
+            {
+                "role": "user",
+                "content": "1"
+            },
+            {
+                "role": "assistant",
+                "content": "Hello! I'm here to help you with your studies, schedule, or anything related to campus life at UKM.  \n\nHow can I assist you today? 😊"
+            }
+        ]
+    }
+}

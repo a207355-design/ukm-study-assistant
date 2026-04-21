@@ -1,0 +1,30 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="PyPackageRequirementsInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredPackages">
+        <list>
+          <option value="openai" />
+          <option value="HTMLParser" />
+          <option value="PyQRCode" />
+          <option value="qrcode" />
+          <option value="requests" />
+          <option value="chardet" />
+          <option value="Pillow" />
+          <option value="pre-commit" />
+          <option value="web.py" />
+          <option value="linkai" />
+          <option value="agentmesh-sdk" />
+          <option value="python-dotenv" />
+          <option value="PyYAML" />
+          <option value="croniter" />
+          <option value="wechatpy" />
+          <option value="zai-sdk" />
+          <option value="dashscope" />
+          <option value="lark-oapi" />
+          <option value="dingtalk_stream" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>

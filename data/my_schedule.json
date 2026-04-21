@@ -1,0 +1,58 @@
+[
+    {
+        "name": "SOFTWARE DESIGN",
+        "code": "TTTE2213",
+        "day": "Monday",
+        "time": "09:00-11:00",
+        "location": "BK8FTSM"
+    },
+    {
+        "name": " MOBILE APPLICATION PROGRAMMING",
+        "code": "TTTM2213",
+        "day": "Monday",
+        "time": "11:00-13:00",
+        "location": "DEWANMULT"
+    },
+    {
+        "name": "SOFTWARE DESIGN",
+        "code": "TTTE2213",
+        "day": "Monday",
+        "time": "15:00-17:00",
+        "location": "DEWANMULT"
+    },
+    {
+        "name": "USER EXPERIENCE DESIGN",
+        "code": "TTTK3123",
+        "day": "Tuesday",
+        "time": "12:00-14:00",
+        "location": "DEWANMULT"
+    },
+    {
+        "name": "PHILOSOPHY AND CURRENT ISSUES",
+        "code": "LMCW2143",
+        "day": "Tuesday",
+        "time": "17:00-20:00",
+        "location": "DALAM TALIAN"
+    },
+    {
+        "name": "SOFTWARE AND QUALITY MANAGEMENT",
+        "code": "TTTE2223",
+        "day": "Tuesday",
+        "time": "10:00-12:00",
+        "location": "BK2FTSM"
+    },
+    {
+        "name": "SOFTWARE AND QUALITY MANAGEMENT",
+        "code": "TTTE2223",
+        "day": "Wednesday",
+        "time": "10:00-12:00",
+        "location": "BK2FTSM"
+    },
+    {
+        "name": "TEST",
+        "code": "TTTK1143",
+        "day": "Thursday",
+        "time": "10:00-12:00",
+        "location": "BK4FTSM"
+    }
+]
