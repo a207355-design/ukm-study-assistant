@@ -107,7 +107,7 @@ def show_page():
                         # 🌟 核心修改：在卡片信息里加入了 c['code']
                         code_str = c.get('code', 'N/A')
                         st.markdown(f"""
-                        # 自定义CSS
+                        
                         <div class='course-card-title'>{c['name']}</div>
                         <div class='course-card-info'>
                             🏷️ {code_str}<br>

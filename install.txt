@@ -1,0 +1,190 @@
+UKM Study Assistant System
+Installation Guide for Beginners
+
+========================================
+1. Prepare Tools
+========================================
+
+1. Install Python
+Download Python from:
+https://www.python.org/downloads/
+
+During installation, please tick:
+Add Python to PATH
+
+2. Install PyCharm or VS Code
+This step is optional, but recommended.
+
+========================================
+2. Open Project
+========================================
+
+1. Unzip the project ZIP file.
+
+2. Make sure main.py is inside the project folder.
+
+Example structure:
+
+2223 project
+  assets
+  data
+  modules
+  main.py
+  INSTALL.txt
+
+========================================
+3. Install Required Modules
+========================================
+
+Open PowerShell or Terminal.
+
+Go to the project folder:
+
+cd "C:\Users\YourName\Desktop\TTTE2223\2223 project\2223 project(1)\2223 project"
+
+Install required modules:
+
+pip install streamlit
+pip install streamlit-option-menu
+pip install openai
+pip install streamlit-autorefresh
+
+========================================
+4. Set DeepSeek API Key
+========================================
+
+This project uses DeepSeek API.
+
+In PowerShell, type:
+
+$env:DEEPSEEK_API_KEY="YOUR_API_KEY"
+
+$env:DEEPSEEK_API_KEY="sk-f07f8cccbb4e4125be1206a838a0b2ca"
+
+Check whether it is set successfully:
+
+echo $env:DEEPSEEK_API_KEY
+
+If your API key is displayed, it means the setting is successful.
+
+========================================
+5. Run the Project
+========================================
+
+In the same PowerShell window, run:
+
+python -m streamlit run main.py
+
+After running, the terminal will show:
+
+Local URL: http://localhost:8501
+
+Open this link in the browser.
+
+========================================
+6. Common Errors and Solutions
+========================================
+
+Error:
+No module named streamlit_autorefresh
+
+Solution:
+pip install streamlit-autorefresh
+
+----------------------------------------
+
+Error:
+No module named streamlit_option_menu
+
+Solution:
+pip install streamlit-option-menu
+
+----------------------------------------
+
+Error:
+The api_key client option must be set
+
+Solution:
+Set the DeepSeek API Key again:
+
+$env:DEEPSEEK_API_KEY="YOUR_API_KEY"
+
+----------------------------------------
+
+Error:
+File does not exist: main.py
+
+Solution:
+Make sure you are in the folder where main.py is located.
+
+----------------------------------------
+
+Error:
+streamlit is not recognized
+
+Solution:
+Install streamlit first:
+
+pip install streamlit
+
+Then run:
+
+python -m streamlit run main.py
+
+========================================
+7. GitHub Upload Notes
+========================================
+
+Files that should be uploaded:
+
+assets
+data
+modules
+main.py
+INSTALL.txt
+README.md
+
+Files that should NOT be uploaded:
+
+.venv
+__pycache__
+.idea
+key.txt
+.env
+API key
+
+Please do not upload your API key to GitHub.
+
+========================================
+8. Run from GitHub
+========================================
+
+Method 1: Download ZIP
+
+1. Open the GitHub project page.
+2. Click Code.
+3. Click Download ZIP.
+4. Unzip the file.
+5. Open PowerShell in the project folder.
+6. Install modules.
+7. Set API key.
+8. Run the project.
+
+Method 2: Git Clone
+
+git clone https://github.com/your-username/your-repository-name.git
+
+cd your-repository-name
+
+pip install streamlit
+pip install streamlit-option-menu
+pip install openai
+pip install streamlit-autorefresh
+
+$env:DEEPSEEK_API_KEY="YOUR_API_KEY"
+
+python -m streamlit run main.py
+
+========================================
+End
+========================================
