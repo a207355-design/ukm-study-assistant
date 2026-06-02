@@ -59,7 +59,7 @@ In PowerShell, type:
 
 $env:DEEPSEEK_API_KEY="YOUR_API_KEY"
 
-$env:DEEPSEEK_API_KEY="sk-f07f8cccbb4e4125be1206a838a0b2ca"
+$env:"
 
 Check whether it is set successfully:
 
